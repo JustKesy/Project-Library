@@ -1,5 +1,85 @@
+body {
+  font-family: sans-serif;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+header {
+  background: url(/img/alfons-morales-YLSwjSy7stw-unsplash.jpg);
+  height: 17vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  opacity: 0.9;
+  border-bottom: 2px solid red;
+}
+
+h1 {
+  color: white;
+  text-shadow: 8px 6px 3px #242222;
+  font-size: 70px;
+  margin-bottom: 7px;
+}
+
+.library {
+  display: flex;
+  width: 100vw;
+  height: 83vh;
+}
+.addBook {
+  width: 19vw;
+  background-color: #000000cf;
+}
+.shelves {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+ul {
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style: none;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  color: whitesmoke;
+}
+input[type="text"],
+input[type="number"] {
+  appearance: none;
+  width: 93%;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #cbad8aba;
+  font-size: inherit;
+  padding-left: 5px;
+  outline: none;
+}
+input:focus {
+  background-color: whitesmoke;
+  border: 3px solid rgba(0, 0, 255, 0.541);
+}
+
+.add-book {
+  align-self: center;
+  border-radius: 15px;
+  background-color: #139113cf;
+  color: whitesmoke;
+  width: 100px;
+  height: 35px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.add-book:active {
+  box-shadow: 3px 3px 4px red;
 }

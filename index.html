@@ -6,5 +6,31 @@
     <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header><h1>Kesy's Library</h1></header>
+    <section class="library">
+      <div class="addBook">
+        <ul>
+          <li>
+            <label for="title">The name of the book?</label
+            ><input type="text" id="title" name="title" required />
+          </li>
+          <li>
+            <label for="author">The book is written by?</label
+            ><input type="text" id="author" name="author" required />
+          </li>
+          <li>
+            <label for="pages">How many pages it has?</label
+            ><input type="number" id="pages" name="pages" min="10" required />
+          </li>
+          <li>
+            <label for="read">Have you read this book?</label
+            ><input type="checkbox" name="readed" id="read" checked />
+          </li>
+          <li><button class="add-book" type="button">Add book!</button></li>
+        </ul>
+      </div>
+      <div class="shelves"></div>
+    </section>
+  </body>
 </html>
